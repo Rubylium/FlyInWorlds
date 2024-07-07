@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlyInWorlds.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FlyInWorlds.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlyInWorlds.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FlyInWorlds.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.test.iml" />
     </modules>
   </component>
 </project>
