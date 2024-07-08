@@ -10,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 public final class FlyInWorlds extends JavaPlugin implements Listener {
@@ -19,7 +20,7 @@ public final class FlyInWorlds extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this);
-        this.getCommand("flyinworldsreload").setExecutor(new ReloadCommand(this));
+        Objects.requireNonNull(this.getCommand("flyinworldsreload")).setExecutor(new ReloadCommand(this));
     }
 
     @EventHandler
