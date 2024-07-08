@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlyInWorlds.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FlyInWorlds.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlyInWorlds.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FlyInWorlds.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.crimsonwarpedcraft.flyinworlds.FlyInWorlds.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.ruby.rubymine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.ruby.rubymine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rubymine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rubymine.main.iml" />
     </modules>
   </component>
 </project>

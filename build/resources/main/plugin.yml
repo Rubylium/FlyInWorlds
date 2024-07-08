@@ -1,4 +1,4 @@
 name: FlyInWorlds
-version: '${version}'
+version: '1.0-SNAPSHOT'
 main: org.ruby.rubymine.FlyInWorlds
 api-version: '1.20'
