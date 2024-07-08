@@ -2,3 +2,8 @@ name: FlyInWorlds
 version: '${version}'
 main: org.ruby.rubymine.FlyInWorlds
 api-version: '1.20'
+
+commands:
+  flyinworldsreload:
+    description: Reloads the FlyInWorlds plugin configuration
+    usage: /<command>

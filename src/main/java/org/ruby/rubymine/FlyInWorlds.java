@@ -14,12 +14,12 @@ import java.util.regex.Pattern;
 
 public final class FlyInWorlds extends JavaPlugin implements Listener {
 
-    private final Pattern worldNamePattern = Pattern.compile("spawn-.*");
+    private final Pattern worldNamePattern = Pattern.compile("^spawn$");
 
     @Override
     public void onEnable() {
-        saveDefaultConfig();
         Bukkit.getPluginManager().registerEvents(this, this);
+        this.getCommand("flyinworldsreload").setExecutor(new ReloadCommand(this));
     }
 
     @EventHandler
