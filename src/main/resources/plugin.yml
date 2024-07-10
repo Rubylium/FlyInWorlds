@@ -7,3 +7,6 @@ commands:
   flyinworldsreload:
     description: Reloads the FlyInWorlds plugin configuration
     usage: /<command>
+  pmine:
+    description: Teleport to a specific mine
+    usage: /pmine
