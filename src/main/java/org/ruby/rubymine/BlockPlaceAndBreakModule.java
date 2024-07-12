@@ -28,6 +28,9 @@ public class BlockPlaceAndBreakModule implements Listener {
 			FlyInWorlds.sendMessage(player, Component.text("Block placing is disabled here.", NamedTextColor.RED));
 		} else {
 			blockTracker.incrementBlockCount(player);
+			if (!blockTracker.isTracking(player)) {
+				blockTracker.startTracking(player);
+			}
 		}
 	}
 
@@ -39,6 +42,9 @@ public class BlockPlaceAndBreakModule implements Listener {
 			FlyInWorlds.sendMessage(player, Component.text("Block breaking is disabled here.", NamedTextColor.RED));
 		} else {
 			blockTracker.incrementBlockCount(player);
+			if (!blockTracker.isTracking(player)) {
+				blockTracker.startTracking(player);
+			}
 		}
 	}
 }

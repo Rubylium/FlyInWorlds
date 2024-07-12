@@ -24,8 +24,9 @@ public final class FlyInWorlds extends JavaPlugin implements Listener {
 		Bukkit.getPluginManager().registerEvents(this, this);
 		Objects.requireNonNull(this.getCommand("flyinworldsreload")).setExecutor(new ReloadCommand(this));
 		Objects.requireNonNull(this.getCommand("pmine")).setExecutor(new MineCommand());
-		Bukkit.getPluginManager().registerEvents(new BlockPlaceAndBreakModule(blockTracker), this);
 		getServer().getPluginManager().registerEvents(new PlayerDisconnectListener(blockTracker), this);
+		Bukkit.getPluginManager().registerEvents(new BlockPlaceAndBreakModule(blockTracker), this);
+		blockTracker.startMessageTask();
 	}
 
 	@EventHandler
