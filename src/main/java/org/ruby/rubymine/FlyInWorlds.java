@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 public final class FlyInWorlds extends JavaPlugin implements Listener {
 
-	private final Pattern worldNamePattern = Pattern.compile("^(spawn|beta_mine)$");
+	private final Pattern worldNamePattern = Pattern.compile("^(spawn|beta_mine|PrivateMine-.*)$");
 	private final BlockTracker blockTracker = new BlockTracker(this);
 
 	@Override
@@ -54,11 +54,11 @@ public final class FlyInWorlds extends JavaPlugin implements Listener {
 	}
 
 	public static void sendMessage(Player player, Component message) {
-	    Component prefix = Component.text("RUBY", NamedTextColor.RED).decoration(TextDecoration.BOLD, true)
-	            .append(Component.text("PRISON", NamedTextColor.WHITE).decoration(TextDecoration.BOLD, true))
-	            .append(Component.text(" >> ", NamedTextColor.GRAY).decoration(TextDecoration.BOLD, false));
-	    // Reset bold for the message component
-	    Component formattedMessage = message.decoration(TextDecoration.BOLD, false);
-	    player.sendMessage(prefix.append(formattedMessage));
+		Component prefix = Component.text("RUBY", NamedTextColor.RED).decoration(TextDecoration.BOLD, true)
+				.append(Component.text("PRISON", NamedTextColor.WHITE).decoration(TextDecoration.BOLD, true))
+				.append(Component.text(" >> ", NamedTextColor.GRAY).decoration(TextDecoration.BOLD, false));
+		// Reset bold for the message component
+		Component formattedMessage = message.decoration(TextDecoration.BOLD, false);
+		player.sendMessage(prefix.append(formattedMessage));
 	}
 }
